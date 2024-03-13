@@ -8,16 +8,19 @@
   "favicon": "/favicon.svg",
   "colors": {
     "primary": "#06b6d4",
-    "light": "#07C983",
+    "light": "#06b6d4",
     "dark": "#06b6d4",
     "anchors": {
       "from": "#06b6d4",
       "to": "#07C983"
+    },
+    "background": {
+      "dark": "#020617"
     }
   },
   "topbarLinks": [
     {
-      "name": "Support",
+      "name": "Contact Support",
       "url": "mailto:help@getsiimple.com"
     }
   ],
