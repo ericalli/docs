@@ -1,0 +1,63 @@
+---
+title: 'Setting up a Custom Domain Name'
+---
+
+If you have your own domain name you can use this on your Siimple site. 
+
+<Note>
+The custom domain must be **registered** before you can use it on Siimple. If you haven't registered the domain yet, you can generally do so at any domain provider (such as [Cloudflare](https://www.cloudflare.com/products/registrar/), [Namecheap](https://www.namecheap.com/), or [Godaddy](https://www.godaddy.com/))
+</Note>
+
+
+## Adding Your Custom Domain Name
+
+To add your custom domain name to your Siimple site, follow these steps:
+
+1. Make sure your site is Published
+2. From your **Dashboard** Go to **Settings** > **General Settings** 
+3. Select **Custom Domain** from the dropdown field
+4. Type in the full Domain name you would like to use. Such as `yoursite.com` or for a subdomain `subdomain.yoursite.com`
+5. Click ‘**Save Changes’**
+
+<img src="/images/custom-domain.jpg" class="rounded-md" />
+
+Next, you would need to change your DNS records through your domain registrar's (GoDaddy, Namecheap, Google Domains, etc) or DNS provider's (Cloudflare, Netlify, etc) website.
+
+## How to update your DNS Settings
+
+To use your custom domain with Siimple, you need to update your DNS settings. This is done through your domain registrar's website. If you're not sure who your domain registrar is, you can use a service like [Whois](https://www.whois.com/whois/) to find out.
+
+### Root domain records
+
+For a root domain like `yoursite.com` you'll need to add the following two records:
+
+<Note>
+Be sure to remove any old A records or AAAA records for your root domain or old CNAME entries for www in your DNS settings if your provider does not do this automatically.
+</Note>
+
+<Steps>
+  <Step title="A Record">
+    An **A** record pointing `@` to the IP address `137.66.61.42`
+  </Step>
+  <Step title="CNAME Record">
+    A **CNAME** record pointing www back to your domain without the www (eg. `yoursite.com`)
+  </Step>
+</Steps>
+
+### Subdomain records
+
+For a subdomain like `subdomain.yoursite.com` you'll need to add one record:
+
+An **A** record pointing `subdomain` to the IP address `137.66.61.42`
+
+Where `subdomain` can be any name you want to use.
+
+### Troubleshooting
+
+If you run into issues, please ensure that you have:
+
+1. Added new DNS records to your domain provider
+2. Removed old DNS records
+3. Waited up to 24 hours for new records to propagate
+
+If after checking all of the above you are still having issues, please reach out to our support team.
