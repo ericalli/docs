@@ -46,9 +46,21 @@
       ]
     },
     {
+      "group": "Site Editor",
+      "pages": [
+        "site-editor/upload-logo"
+      ]
+    },
+    {
       "group": "Site Settings",
       "pages": [
-        "site-settings/domains"
+        {
+          "group": "Customize Domain Name",
+          "pages": [
+            "site-settings/domains/free-domain",
+            "site-settings/domains/custom-domain"
+          ]
+        }
       ]
     }
   ],
