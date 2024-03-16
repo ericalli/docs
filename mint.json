@@ -58,17 +58,22 @@
       "group": "Site Settings",
       "pages": [
         {
-          "group": "Customize Domain Name",
+          "group": "General Settings",
           "pages": [
-            "site-settings/domains/free-domain",
-            "site-settings/domains/custom-domain"
+            "site-settings/overview",
+            "site-settings/use-a-free-domain",
+            "site-settings/use-a-custom-domain"
           ]
-        }
+        },
+        "site-settings/seo-settings"
       ]
     }
   ],
   "footerSocials": {
     "twitter": "https://twitter.com/getsiimple",
     "linkedin": "https://www.linkedin.com/company/getsiimple"
+  },
+  "feedback": {
+    "thumbsRating": true
   }
 }
