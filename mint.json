@@ -45,7 +45,8 @@
     {
       "group": "",
       "pages": [
-        "introduction"
+        "introduction",
+        "getting-started"
       ]
     },
     {
@@ -66,6 +67,12 @@
           ]
         },
         "site-settings/seo-settings"
+      ]
+    },
+    {
+      "group": "Account",
+      "pages": [
+        "account/manage-subscriptions"
       ]
     }
   ],
